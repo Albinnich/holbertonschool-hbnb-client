@@ -1,49 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Review</title>
-    <link rel="stylesheet" href="../style/styles.css">
-    <link rel="stylesheet" href="../style/add_review.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
-        <a href="../templates/index.html"><img src="../assets/logo.png" alt="Logo" class="logo"></a>
+        <img src="logo.png" alt="Logo" class="logo">
         <nav>
-            <a href="../templates/login.html" id="login-link" class="login-button">Login</a>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="login.html" class="nav-link login-button">Login</a>
         </nav>
     </header>
-    <main class="review-container">
-        <form id="review-form" class="review-form">
+    <main>
+        <form id="review-form" class="form-container">
             <h2>Add a Review</h2>
-            <div class="form-group">
-                <label for="place">Place:</label>
-                <input type="text" id="place" name="place" readonly>
-            </div>
-            <div class="form-group">
-                <label for="review">Review:</label>
-                <textarea id="review" name="review" rows="4" required></textarea>
-            </div>
-            <div class="form-group">
-                <label for="rating">Rating:</label>
-                <select id="rating" name="rating" required>
-                    <option value="1">1 Star</option>
-                    <option value="2">2 Stars</option>
-                    <option value="3">3 Stars</option>
-                    <option value="4">4 Stars</option>
-                    <option value="5">5 Stars</option>
-                </select>
-            </div>
-            <button type="submit" class="submit-button">Submit</button>
+            <label for="place">Place:</label>
+            <input type="text" id="place" name="place" readonly>
+            
+            <label for="review">Review:</label>
+            <textarea id="review" name="review" required></textarea>
+            
+            <button type="submit">Submit</button>
         </form>
     </main>
     <footer>
-        <p>© 2024 HBnB Evolution. All rights reserved.</p>
+        <p>&copy; 2024 Holberton School. All rights reserved.</p>
     </footer>
     <script src="scripts.js"></script>
 </body>
-
 </html>
+
